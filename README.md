@@ -45,7 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://drive.google.com/file/d/1iJQAhA4CGsiZ7n4WcWVBIDlUwgvtlmiC/view?usp=sharing)
+- [Live Demo Link](https://sagieramos.github.io/Portforlio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,14 +60,14 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 ```sh
-  git clone https://github.com/sagieramos/aboutMe $HOME/aboutMe
+  git clone https://github.com/sagieramos/Portfolio $HOME/Portforlio
 ```
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  open $HOME/aboutMe/index.html
+  open $HOME/Portforlio/index.html
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

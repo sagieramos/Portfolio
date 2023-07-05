@@ -12,6 +12,7 @@
 }
 
 body {
+  min-width: 375px;
   background-color: #dfe1e6;
   display: flex;
   justify-content: center;
@@ -83,4 +84,8 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 170px;
+}
+
+#headline ul li:hover {
+  transform: scale(1.3);
 }

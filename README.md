@@ -40,6 +40,7 @@
 ### Key Features <a name="key-features"></a>
 
 - Mobile Webpage
+- Hover effect is now added
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

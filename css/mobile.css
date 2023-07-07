@@ -96,6 +96,14 @@ a {
   transform: scale(1.3);
 }
 
+#languages li {
+  display: flex;
+  gap: 16px;
+  padding: 9px 12px 9.716px 12px;
+  align-items: center;
+  background-color: #f7f7f9;
+}
+
 #headline ul li:hover {
   transform: scale(1.3);
 }
@@ -208,6 +216,7 @@ button {
   align-items: center;
   gap: 24px;
   padding-left: 10px;
+  margin-top: 16px;
 }
 
 button:hover {
@@ -229,21 +238,33 @@ button:hover {
   flex-direction: column;
 }
 
-#tech * {
+.tech {
   padding: 24px 12px;
   color: #000;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  border-bottom: 1px solid #0000001e;
 }
 
-#tech *::after {
+.border-bottom::after {
   content: url("../assets/arrow-F.svg");
   display: inline-block;
   margin-right: 8px;
   position: absolute;
   right: 32px;
+}
+
+.underline {
+  border-bottom: 1px solid #0000001e;
+}
+
+.dropdown::after {
+  content: url("../assets/arrow-F.svg");
+  display: inline-block;
+  margin-right: 8px;
+  position: absolute;
+  right: 32px;
+  transform: rotate(90deg);
 }
 
 #contact-form {
@@ -305,4 +326,18 @@ textarea {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+}
+
+#languages {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#languages li h3 {
+  color: #253858;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
 }

@@ -1,27 +1,21 @@
 <a name="readme-top"></a>
 
-
-
 <div align="center">
-
-  <img src="imuwahen_logo.png" alt="logo" width="140"  height="auto" />
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="imuwahen_logo.png alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Portfolio</b></h3>
+  <h3><b>Microverse README Template</b></h3>
 
 </div>
-
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -29,51 +23,55 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
+# 📖 [My Portforlio] <a name="about-project"></a>
 
-# 📖 Fullstack Development <a name="about-project"></a>
 
-**Portforlio** is a simple HTML and CSS project that shows about me: 
+**Portfolio** is a simple webpage that showcase my skills in web development
 
-## 🛠  Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with"></a>
 
+### Tech Stack <a name="tech-stack"></a>
+  - HTML
+  - CSS
+
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="#">Null</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="#">Null</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="#">Null</a></li>
+  </ul>
+</details>
 
 ### Key Features <a name="key-features"></a>
 
-- Mobile Webpage
+- **Display webpage for mobile screen**
+- **Contact form**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://sagieramos.github.io/Portforlio)
+- [Live Demo Link](https://sagieramos.github.io/portforlio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-### Prerequisites
-
-In order to run this project you need:
-
-
-### Setup
-
-Clone this repository to your desired folder:
-```sh
-  git clone https://github.com/sagieramos/Portfolio $HOME/Portforlio
-```
-### Usage
-
-To run the project, execute the following command:
-
-```sh
-  open $HOME/Portforlio/index.html
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors"></a>
+
 👤 **Stanley Osagie Ramos**
 - GitHub: [@sagieramos](https://github.com/sagieramos)
 - Twitter: [@sagieramos](https://twitter.com/sagieramos)
@@ -85,7 +83,6 @@ To run the project, execute the following command:
 - LinkedIn: [gustavfranco](https://linkedin.com/in/gustavfranco)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🔭 Future Features <a name="future-features"></a>
 

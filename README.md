@@ -59,6 +59,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Display webpage for mobile screen**
+- **Contact form**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

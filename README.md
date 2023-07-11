@@ -76,6 +76,11 @@
 - Twitter: [@sagieramos](https://twitter.com/sagieramos)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sagieramos)
 
+👤 **Gustavo Franco**
+- GitHub: [@gfrancoarq](https://github.com/gfrancoarq)
+- Twitter: [@gfrancoarq](https://twitter.com/Gfrancoarq)
+- LinkedIn: [gustavfranco](https://linkedin.com/in/gustavfranco)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>

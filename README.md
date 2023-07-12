@@ -17,7 +17,6 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -40,12 +39,9 @@
 ### Key Features <a name="key-features"></a>
 
 - Mobile Webpage
+- Contact Form
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://sagieramos.github.io/Portforlio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,14 +56,14 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 ```sh
-  git clone https://github.com/sagieramos/Portfolio $HOME/Portforlio
+  git clone https://github.com/sagieramos/aboutMe $HOME/aboutMe
 ```
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  open $HOME/Portforlio/index.html
+  open $HOME/aboutMe/index.html
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -78,6 +74,11 @@ To run the project, execute the following command:
 - GitHub: [@sagieramos](https://github.com/sagieramos)
 - Twitter: [@sagieramos](https://twitter.com/sagieramos)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sagieramos)
+
+👤 **Gustavo Franco**
+- GitHub: [@gfrancoarq](https://github.com/gfrancoarq)
+- Twitter: [@gfrancoarq](https://twitter.com/Gfrancoarq)
+- LinkedIn: [gustavfranco](https://linkedin.com/in/gustavfranco)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

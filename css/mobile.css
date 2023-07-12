@@ -205,8 +205,8 @@ fieldset > *:not(:last-child) {
 }
 
 .tag {
-  display: flex;
-  gap: 8px;
+  float: right;
+  width: min-content;
 }
 
 button {

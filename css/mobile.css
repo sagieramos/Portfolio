@@ -137,6 +137,7 @@ a {
 
 main {
   max-width: 667px;
+  margin: 0 auto;
 }
 
 #works {

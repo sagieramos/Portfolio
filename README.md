@@ -40,6 +40,7 @@
 
 - Mobile Webpage
 - Contact Form
+- Responsive webpage (Mobile and Desktop)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

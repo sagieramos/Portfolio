@@ -404,3 +404,7 @@ fieldset #submit:active {
   overflow: hidden;
   transition-duration: 0.4s;
 }
+
+.dk {
+  display: none;
+}

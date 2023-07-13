@@ -148,6 +148,11 @@ main {
   margin: 0 auto;
 }
 
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 .card img {
   width: 100%;
   height: auto;
@@ -233,6 +238,12 @@ main {
   background-color: transparent;
 }
 
+button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #396df2;
+}
+
 .primary-text {
   color: #344563;
   font-size: 16px;
@@ -314,6 +325,12 @@ fieldset * {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.51px;
+}
+
+#resume:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #396df2;
 }
 
 .tech {

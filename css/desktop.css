@@ -18,7 +18,13 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   background-color: #dfe1e6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .hamburger-menu,
 .sidebar {
@@ -361,4 +367,10 @@ main {
 
 #headline ul li:hover {
   transform: scale(1.3);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: ;
 }

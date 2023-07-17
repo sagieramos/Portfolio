@@ -26,6 +26,10 @@ body {
   position: relative;
 }
 
+header {
+  width: 100%;
+}
+
 .hamburger-menu,
 .sidebar {
   display: none;
@@ -318,7 +322,6 @@ fieldset * {
   font-weight: 700;
   letter-spacing: 0.37px;
   line-height: 52px;
-  width: 100%;
 }
 
 .paragraph {

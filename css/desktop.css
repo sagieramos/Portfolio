@@ -91,6 +91,7 @@ nav {
   height: 100vh;
   background-color: #fff;
   border-bottom-left-radius: 80px;
+  width: 100%;
 }
 
 .social-icon {
@@ -274,6 +275,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 fieldset * {

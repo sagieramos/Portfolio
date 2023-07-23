@@ -22,7 +22,7 @@ body {
   background-color: #dfe1e6;
 }
 
-.menu-desktop {
+#menu-desktop {
   display: none;
 }
 
@@ -403,6 +403,31 @@ fieldset #submit:active {
   background: #2230d2;
   overflow: hidden;
   transition-duration: 0.4s;
+}
+
+#menu-mobile {
+  margin-top: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.menu-list a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  padding: 8px 16px;
+}
+
+.blur {
+  filter: blur(5px);
+  pointer-events: none; 
+}
+
+.disable-overflow {
+  overflow: hidden;
 }
 
 .dk {

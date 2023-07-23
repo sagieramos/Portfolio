@@ -12,8 +12,8 @@ const sections = {
 function handleNavigation(e) {
   const { target } = e;
   let sectionId = 'header';
+  e.preventDefault();
   if (target.matches('.hamburger-menu, .Portforlio *, .About *, .Contact *')) {
-    e.preventDefault();
     checkbox.checked = !checkbox.checked;
     blurList.forEach((item) => document.querySelector(item).classList.toggle('blur'));
     document.documentElement.classList.toggle('disable-overflow');
@@ -21,6 +21,7 @@ function handleNavigation(e) {
   if (target.matches('.Portforlio *')) sectionId = 'portfolio';
   else if (target.matches('.About *')) sectionId = 'about';
   else if (target.matches('.Contact *')) sectionId = 'contact';
+  else sectionId = 'header';
   sections[sectionId].scrollIntoView({ behavior: 'smooth' });
 }
 

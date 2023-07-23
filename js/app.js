@@ -12,7 +12,7 @@ const sections = {
 function handleNavigation(e) {
   const { target } = e;
   let sectionId = 'header';
-  if (target.matches('#logo, .hamburger-menu, .Portforlio *, .About *, .Contact *')) {
+  if (target.matches('.hamburger-menu, .Portforlio *, .About *, .Contact *')) {
     e.preventDefault();
     checkbox.checked = !checkbox.checked;
     blurList.forEach((item) => document.querySelector(item).classList.toggle('blur'));

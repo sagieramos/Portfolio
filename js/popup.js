@@ -1,7 +1,7 @@
 const obj = [
   {
     img: { mb: './assets/Snapshoot1.svg', dk: './assets/Snapshoot1-dk.svg' },
-    story: { mb: 'Tonic', dk: 'Facebook 360' },
+    story: { mb: 'Tonic', dk: 'Tonic' },
     pt: {
       mb: ['CANOPY', 'Back End Dev', '2015'],
       dk: ['FACEBOOK', 'Full Stack Dev', '2015'],
@@ -17,7 +17,7 @@ const obj = [
   },
   {
     img: { mb: './assets/Snapshoot2.svg', dk: './assets/Snapshoot2-dk.svg' },
-    story: { mb: 'Multi-Post Stories', dk: 'Uber Navigation' },
+    story: { mb: 'Multi-Post Stories', dk: 'Multi-Post Stories' },
     pt: {
       mb: ['CANOPY', 'Back End Dev', '2015'],
       dk: ['Uber', 'Lead Developer', '2018'],
@@ -90,9 +90,11 @@ function createCard(objItem) {
 
   const h21 = document.createElement('h2');
   h21.textContent = objItem.story.mb;
+  h21.className = 'mb';
 
   const h22 = document.createElement('h2');
   h22.textContent = objItem.story.dk;
+  h22.className = 'dk';
 
   const ul1 = document.createElement('ul');
   ul1.classList.add('primary-text', 'mb');

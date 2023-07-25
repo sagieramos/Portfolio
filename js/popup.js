@@ -145,3 +145,116 @@ obj.forEach((item) => {
   const cardArticle = createCard(item);
   worksSection.appendChild(cardArticle);
 });
+
+function createPopup(objItem) {
+  const articleContainer = document.createElement('article');
+  articleContainer.className = 'pop-up-container';
+
+  const sectionPopup = document.createElement('section');
+  sectionPopup.id = 'pop-up';
+
+  const divHeadin = document.createElement('div');
+  divHeadin.className = 'headin';
+
+  const h2Mb = document.createElement('h2');
+  h2Mb.className = 'mb';
+  h2Mb.textContent = objItem.story.mb;
+
+  const h2Dk = document.createElement('h2');
+  h2Dk.className = 'dk';
+  h2Dk.textContent = objItem.story.dk;
+
+  const imgDeletePopup = document.createElement('img');
+  imgDeletePopup.id = 'delete-popup';
+  imgDeletePopup.src = './assets/IconCancel.svg';
+  imgDeletePopup.alt = 'Cancel';
+
+  divHeadin.append(h2Mb, h2Dk, imgDeletePopup);
+
+  const ulPrimaryTextMb = document.createElement('ul');
+  ulPrimaryTextMb.className = 'primary-text pt mb';
+  objItem.pt.mb.forEach((item) => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    ulPrimaryTextMb.appendChild(li);
+  });
+
+  const ulPrimaryTextDk = document.createElement('ul');
+  ulPrimaryTextDk.className = 'primary-text pt dk';
+  objItem.pt.dk.forEach((item) => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    ulPrimaryTextDk.appendChild(li);
+  });
+
+  const imgCardMb = document.createElement('img');
+  imgCardMb.className = 'card-img mb';
+  imgCardMb.src = objItem.img.mb;
+  imgCardMb.alt = 'Snapshoot';
+
+  const imgCardDk = document.createElement('img');
+  imgCardDk.className = 'card-img dk';
+  imgCardDk.src = objItem.img.dk;
+  imgCardDk.alt = 'Snapshoot';
+
+  const sectionParaContainer = document.createElement('section');
+  sectionParaContainer.className = 'para-container';
+
+  const pParaMb = document.createElement('p');
+  pParaMb.className = 'paragraph-popup mb';
+  pParaMb.textContent = objItem.dist.mb;
+
+  const pParaDk = document.createElement('p');
+  pParaDk.className = 'paragraph-popup dk';
+  pParaDk.textContent = objItem.dist.dk;
+
+  const articleParaLink = document.createElement('article');
+  articleParaLink.className = 'para-link';
+
+  const ulPopupTagsMb = document.createElement('ul');
+  ulPopupTagsMb.className = 'popup-tags mb';
+  objItem.tag.mb.forEach((tagItem) => {
+    const li = document.createElement('li');
+    li.textContent = tagItem;
+    ulPopupTagsMb.appendChild(li);
+  });
+
+  const ulPopupTagsDk = document.createElement('ul');
+  ulPopupTagsDk.className = 'popup-tags dk';
+  objItem.tag.dk.forEach((tagItem) => {
+    const li = document.createElement('li');
+    li.textContent = tagItem;
+    ulPopupTagsDk.appendChild(li);
+  });
+
+  const ulPopupBtn = document.createElement('ul');
+  ulPopupBtn.className = 'popup-btn';
+
+  const btnLive = document.createElement('button');
+  btnLive.className = 'live l-btn';
+  btnLive.textContent = 'See live';
+
+  const btnSource = document.createElement('button');
+  btnSource.className = 'source l-btn';
+  btnSource.textContent = 'See source';
+
+  ulPopupBtn.append(btnLive, btnSource);
+  sectionParaContainer.append(pParaMb, pParaDk, articleParaLink);
+  articleParaLink.append(ulPopupTagsMb, ulPopupTagsDk, ulPopupBtn);
+
+  sectionPopup.append(
+    divHeadin,
+    ulPrimaryTextMb,
+    ulPrimaryTextDk,
+    imgCardMb,
+    imgCardDk,
+    sectionParaContainer,
+  );
+
+  articleContainer.appendChild(sectionPopup);
+
+  const parentElement = document.querySelector('body');
+  parentElement.appendChild(articleContainer);
+}
+
+createPopup(obj[1]);

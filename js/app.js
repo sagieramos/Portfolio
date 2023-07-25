@@ -1,5 +1,5 @@
 const checkbox = document.querySelector('#menu-checkbox');
-const blurList = ['#logo', '#headline', 'main'];
+const blurList = ['#logo', '#headline', 'main', '#about-container', '.white-bg'];
 const navHeader = document.querySelector('.nav-header');
 
 const sections = {

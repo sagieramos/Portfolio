@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.pop-up-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  background-color: transparent;
+  z-index: 8;
+  overflow-y: scroll;
+}
+
+#pop-up {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 111px 24px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 24px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.headin {
+  display: flex;
+  justify-content: space-between;
+  color: #091e42;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.headin img {
+  padding: 8px;
+}
+
+.paragraph-popup {
+  color: #344563;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.para-link {
+  width: 309px;
+  display: flex;
+  flex-direction: column;
+}
+
+.l-btn {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  margin: 0;
+  font-weight: 500;
+  width: 142px;
+  background: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #396df2;
+}
+
+.live::after {
+  content: url('../assets/live-icon.svg');
+  margin-top: 6px;
+}
+
+.source::after {
+  content: url('../assets/github-icon.svg');
+  margin-top: 6px;
+}
+
+.popup-btn {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.popup-tags::after {
+  content: "";
+  width: 100%;
+  border: 1px solid #ebecf0;
+  margin: 16px 0 24px 0;
+}
+
+@media screen and (min-width: 747px) {
+  .pop-up-container {
+    padding: 77px 9.86%;
+  }
+
+  .para-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .headin h2 {
+    padding-top: 8px;
+  }
+
+  .pt {
+    margin-bottom: 32px;
+  }
+
+  .card-img {
+    margin-bottom: 59px;
+  }
+}

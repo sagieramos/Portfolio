@@ -13,21 +13,21 @@
 .pop-up-container {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
   background-color: transparent;
   z-index: 8;
   overflow-y: scroll;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
 }
 
 #pop-up {
   display: flex;
   flex-direction: column;
-  padding: 24px 24px 111px 24px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 24px;
+  width: 100%;
 }
 
 .card-img {
@@ -41,24 +41,11 @@
   justify-content: space-between;
   color: #091e42;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: 52px;
 }
 
-.headin img {
-  padding: 8px;
-}
-
-.paragraph-popup {
-  color: #344563;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-}
-
 .para-link {
-  width: 309px;
   display: flex;
   flex-direction: column;
 }
@@ -89,12 +76,36 @@
   margin-top: 6px;
 }
 
+#pop-up h2 {
+  font-size: 32px;
+}
+
 .popup-btn {
   font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 12px;
+}
+
+.popup-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.popup-tags li {
+  align-items: center;
+  padding: 4px 12px;
+  height: 24px;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  background: #ebebff;
+  color: #6070ff;
 }
 
 .popup-tags::after {
@@ -109,6 +120,28 @@
     padding: 77px 9.86%;
   }
 
+  #delete-popup {
+    position: fixed;
+    right: 114px;
+  }
+
+  .pt {
+    margin-bottom: 28px;
+  }
+
+
+  .headin {
+    margin-bottom: 8px;
+  }
+
+  #pop-up {
+    padding: 24px 24px 111px 24px;
+  }
+
+  .card-img {
+    margin-bottom: 59px;
+  }
+
   .para-container {
     display: flex;
     flex-direction: row;
@@ -116,15 +149,53 @@
     gap: 24px;
   }
 
-  .headin h2 {
-    padding-top: 8px;
+  .paragraph-popup {
+    color: #344563;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .para-link {
+    width: 309px;
+  }
+}
+
+@media screen and (max-width: 746px) {
+  .pop-up-container {
+    padding: 12px 24px;
   }
 
   .pt {
-    margin-bottom: 32px;
+    padding: 12px 0;
   }
 
-  .card-img {
-    margin-bottom: 59px;
+  #delete-popup {
+    position: fixed;
+    right: 48px;
+  }
+
+  .headin {
+    margin-bottom: -10px;
+  }
+
+  #pop-up {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .para-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .paragraph-popup {
+    color: #344563;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }

@@ -5,6 +5,18 @@ html {
   overflow-y: auto;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
 @keyframes intro-animation {
   0% {
     transform: translateY(-100%);
@@ -58,14 +70,29 @@ html {
   transition: background-color 0.3s ease;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
+.primary-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
+  gap: 30px;
+  font-weight: 600;
+  line-height: 16px;
+  height: 16px;
+  color: #344563;
+}
+
+.primary-text::marker {
+  font-size: 80px;
+}
+
+.primary-text > *:not(:first-child) {
+  list-style: disc;
+  color: #7a869a;
+  font-size: 13px;
+}
+
+.primary-text > *:not(:first-child)::marker {
+  font-size: 18px;
+  color: #c1c7d0;
 }

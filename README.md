@@ -95,6 +95,7 @@ To run the project, execute the following command:
 - GitHub: [@githubhandle](https://github.com/richie1988)
 - Twitter: [@twitterhandle](https://twitter.com/RICHARDSIK51272)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/richard-sikaonga-039940275/)
+- LinkedIn: [Instagram](https://www.instagram.com/richiesik/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -368,6 +368,12 @@ fieldset #submit:active {
   margin-top: 12px;
 }
 
+input[value="Get in touch"] {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
 .dk {
   display: none;
 }

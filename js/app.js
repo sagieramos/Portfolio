@@ -32,3 +32,22 @@ function handleNavigation(e) {
 
 navHeader.addEventListener('click', handleNavigation);
 navHeader.addEventListener('touchstart', handleNavigation);
+
+document.querySelector('.form').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const emailInput = document.getElementById('emailInput');
+  const emailValue = emailInput.value;
+
+  if (emailValue !== emailValue.toLowerCase()) {
+    const errorMessage = document.getElementById('errorMessage');
+    errorMessage.textContent = 'Email must be in lower case.';
+    errorMessage.style.display = 'block';
+    setTimeout(() => {
+      errorMessage.style.display = 'none';
+    }, 2000);
+  } else {
+    const form = document.getElementById('form');
+    form.submit();
+  }
+});

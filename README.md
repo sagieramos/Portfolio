@@ -83,17 +83,17 @@ To run the project, execute the following command:
 
 
 ## 👥 Authors <a name="authors"></a>
-👤 **Stanley Osagie Ramos**
+👤 ***Stanley Osagie Ramos**
 - GitHub: [@sagieramos](https://github.com/sagieramos)
 - Twitter: [@sagieramos](https://twitter.com/sagieramos)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sagieramos)
 
-👤 **Gustavo Franco**
+👤 ***Gustavo Franco**
 - GitHub: [@gfrancoarq](https://github.com/gfrancoarq)
 - Twitter: [@gfrancoarq](https://twitter.com/Gfrancoarq)
 - LinkedIn: [gustavfranco](https://linkedin.com/in/gustavfranco)
 
-👤 **Richard Sikaonga**
+👤 ***Richard Sikaonga**
 - GitHub: [@githubhandle](https://github.com/richie1988)
 - Twitter: [@twitterhandle](https://twitter.com/RICHARDSIK51272)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/richard-sikaonga-039940275/)

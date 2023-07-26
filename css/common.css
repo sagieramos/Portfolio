@@ -112,14 +112,14 @@ html {
 #resume {
   background: #fff;
   border-radius: 8px;
-border: 1px solid #6070FF;
-padding: 12px;
-color: #396DF2;
-text-align: center;
-font-size: 17px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.51px;
+  border: 1px solid #6070ff;
+  padding: 12px;
+  color: #396df2;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.51px;
 }
 
 .blur {

@@ -144,6 +144,6 @@ a {
   animation: fadeIn 0.6s ease-in-out;
   background: #fff;
   padding: 12px;
-  display: none; 
+  display: none;
   color: red;
 }

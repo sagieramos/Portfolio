@@ -47,6 +47,8 @@
     - When the user clicks (or taps) the close (X) button, the mobile menu disappears.
     - When the user clicks (or taps) any of the mobile menu options, the mobile menu disappears.
     - When the user clicks (or taps) any of the mobile menu options, a correct part of the page is displayed.
+- Popup Window
+- Contact form validation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
 @keyframes intro-animation {
   0% {
     transform: translateY(-100%);
@@ -20,6 +39,18 @@
   }
 }
 
+@keyframes openApp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .header span {
   animation: fadeIn 0.6s ease-in-out;
 }
@@ -34,4 +65,77 @@
 
 .social-icon-2 {
   animation: fadeIn 1.5s ease-in-out;
+}
+
+.card button {
+  width: fit-content;
+  margin: 12px 0;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.51px;
+  color: #396df2;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  transition: background-color 0.3s ease;
+}
+
+.primary-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 30px;
+  font-weight: 600;
+  line-height: 16px;
+  height: 16px;
+  color: #344563;
+}
+
+.primary-text::marker {
+  font-size: 80px;
+}
+
+.primary-text > *:not(:first-child) {
+  list-style: disc;
+  color: #7a869a;
+  font-size: 13px;
+}
+
+.primary-text > *:not(:first-child)::marker {
+  font-size: 18px;
+  color: #c1c7d0;
+}
+
+#resume {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  padding: 12px;
+  color: #396df2;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.51px;
+}
+
+.blur {
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.disable-overflow {
+  overflow: hidden;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

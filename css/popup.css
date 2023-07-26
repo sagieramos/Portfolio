@@ -214,3 +214,7 @@
     display: none;
   }
 }
+
+.l-btn:hover {
+  color: #fff;
+}

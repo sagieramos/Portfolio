@@ -14,6 +14,10 @@ const obj = [
       mb: ['HTML', 'CSS', 'JavaScript'],
       dk: ['HTML', 'CSS', 'JavaScript'],
     },
+    link: {
+      live: 'https://sagieramos.github.io/Portfolio/',
+      codeSource: 'https://github.com/sagieramos/Portfolio/',
+    },
   },
   {
     img: { mb: './assets/Snapshoot2.svg', dk: './assets/Snapshoot2-dk.svg' },
@@ -29,6 +33,10 @@ const obj = [
     tag: {
       mb: ['HTML', 'CSS', 'JavaScript'],
       dk: ['html', 'Ruby on rails', 'css', 'JavaScript'],
+    },
+    link: {
+      live: 'https://sagieramos.github.io/Portfolio/',
+      codeSource: 'https://github.com/sagieramos/Portfolio/',
     },
   },
   {
@@ -46,6 +54,10 @@ const obj = [
       mb: ['HTML', 'CSS', 'JavaScript'],
       dk: ['HTML', 'CSS', 'JavaScript'],
     },
+    link: {
+      live: 'https://sagieramos.github.io/Portfolio/',
+      codeSource: 'https://github.com/sagieramos/Portfolio/',
+    },
   },
   {
     img: { mb: './assets/Snapshoot4.svg', dk: './assets/Snapshoot4-dk.svg' },
@@ -61,6 +73,10 @@ const obj = [
     tag: {
       mb: ['HTML', 'CSS', 'JavaScript'],
       dk: ['html', 'Ruby on rails', 'css', 'JavaScript'],
+    },
+    link: {
+      live: 'https://sagieramos.github.io/Portfolio/',
+      codeSource: 'https://github.com/sagieramos/Portfolio/',
     },
   },
 ];
@@ -238,11 +254,19 @@ function createPopup(objItem) {
 
   const btnLive = document.createElement('button');
   btnLive.className = 'live l-btn';
-  btnLive.textContent = 'See live';
 
   const btnSource = document.createElement('button');
   btnSource.className = 'source l-btn';
-  btnSource.textContent = 'See source';
+
+  const anchorLive = document.createElement('a');
+  anchorLive.href = objItem.link.live;
+  anchorLive.textContent = 'See live';
+  btnLive.appendChild(anchorLive);
+
+  const anchorSource = document.createElement('a');
+  anchorSource.href = objItem.link.codeSource;
+  anchorSource.textContent = 'See source';
+  btnSource.appendChild(anchorSource);
 
   ulPopupBtn.append(btnLive, btnSource);
   sectionParaContainer.append(pParaMb, pParaDk, articleParaLink);

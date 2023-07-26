@@ -505,6 +505,11 @@ fieldset #submit:active {
   transition-duration: 0.4s;
 }
 
+input[value="Get in touch"] {
+  background: #fff;
+  border: none;
+}
+
 .mb {
   display: none;
 }

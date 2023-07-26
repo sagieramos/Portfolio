@@ -364,13 +364,8 @@ fieldset #submit:active {
   padding: 8px 16px;
 }
 
-.blur {
-  filter: blur(8px);
-  pointer-events: none;
-}
-
-.disable-overflow {
-  overflow: hidden;
+#resume {
+  margin-top: 12px;
 }
 
 .dk {

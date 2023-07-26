@@ -65,6 +65,12 @@ const obj = [
   },
 ];
 
+const dkTxt = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`;
+
+const mbTxt = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
+let currentScrollPos;
+
 function createListItem(text) {
   const li = document.createElement('li');
   li.textContent = text;
@@ -202,11 +208,11 @@ function createPopup(objItem) {
 
   const pParaMb = document.createElement('p');
   pParaMb.className = 'paragraph-popup mb';
-  pParaMb.textContent = objItem.dist.mb;
+  pParaMb.innerHTML = mbTxt;
 
   const pParaDk = document.createElement('p');
   pParaDk.className = 'paragraph-popup dk';
-  pParaDk.textContent = objItem.dist.dk;
+  pParaDk.innerHTML = dkTxt;
 
   const articleParaLink = document.createElement('article');
   articleParaLink.className = 'para-link';
@@ -253,8 +259,28 @@ function createPopup(objItem) {
 
   articleContainer.appendChild(sectionPopup);
 
-  const parentElement = document.querySelector('body');
-  parentElement.appendChild(articleContainer);
+  document.documentElement.appendChild(articleContainer);
 }
 
-createPopup(obj[1]);
+const btnArray = [...document.querySelectorAll('.btn')];
+const body = document.querySelector('body');
+
+function popUpWindow(e) {
+  const { target } = e;
+  if (target.matches('.btn')) {
+    currentScrollPos = window.scrollY;
+    const i = btnArray.indexOf(target);
+    createPopup(obj[i]);
+    window.scrollTo(0, 0);
+    body.classList.toggle('blur');
+    document.documentElement.classList.toggle('disable-overflow');
+  } else if (target.matches('#delete-popup')) {
+    document.querySelector('.pop-up-container').remove();
+    window.scrollTo(0, currentScrollPos);
+    body.classList.toggle('blur');
+    document.documentElement.classList.toggle('disable-overflow');
+  }
+}
+
+window.addEventListener('click', popUpWindow);
+window.addEventListener('touchstart', popUpWindow);

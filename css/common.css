@@ -39,6 +39,18 @@ html {
   }
 }
 
+@keyframes openApp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .header span {
   animation: fadeIn 0.6s ease-in-out;
 }
@@ -95,4 +107,30 @@ html {
 .primary-text > *:not(:first-child)::marker {
   font-size: 18px;
   color: #c1c7d0;
+}
+
+#resume {
+  background: #fff;
+  border-radius: 8px;
+border: 1px solid #6070FF;
+padding: 12px;
+color: #396DF2;
+text-align: center;
+font-size: 17px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.51px;
+}
+
+.blur {
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.disable-overflow {
+  overflow: hidden;
+}
+
+body {
+  overflow-y: hidden;
 }

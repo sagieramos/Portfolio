@@ -11,14 +11,21 @@
 }
 
 .pop-up-container {
-  position: absolute;
-  top: 0;
-  background-color: transparent;
-  z-index: 8;
-  overflow-y: scroll;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    background-color: transparent;
+    z-index: 8;
+    overflow-y: auto;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+#delete-popup {
+    cursor: pointer;
 }
 
 #pop-up {
@@ -122,7 +129,7 @@
 
   #delete-popup {
     position: fixed;
-    right: 114px;
+    right: 16%;
   }
 
   .pt {
@@ -175,7 +182,8 @@
 
   #delete-popup {
     position: fixed;
-    right: 48px;
+    right: 10.6%;
+    z-index: 12;
   }
 
   .headin {

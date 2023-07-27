@@ -49,7 +49,7 @@
     - When the user clicks (or taps) any of the mobile menu options, a correct part of the page is displayed.
 - Popup Window
 - Contact form validation.
-
+-Preserve data in the browser When the user changes the content of any input field, the data is -saved to the local storage. When the user loads the page, if there is any data in the local -storage the input fields are pre-filled with this data.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>

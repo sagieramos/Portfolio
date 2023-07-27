@@ -1,3 +1,5 @@
+// Menu and Navigation
+
 const checkbox = document.querySelector('#menu-checkbox');
 const blurList = ['#logo', '#headline', 'main', '#about-container', '.white-bg'];
 const navHeader = document.querySelector('.nav-header');
@@ -33,6 +35,8 @@ function handleNavigation(e) {
 navHeader.addEventListener('click', handleNavigation);
 navHeader.addEventListener('touchstart', handleNavigation);
 
+// Validation
+
 document.querySelector('.form').addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -51,3 +55,30 @@ document.querySelector('.form').addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+// Preserve User data in browser
+
+const form = document.getElementById('form');
+const nameInput = document.querySelector('input[name="name"]');
+const emailInput = document.querySelector('input[name="email"]');
+const messageInput = document.querySelector('textarea[name="message"]');
+
+function saveFormData() {
+  const formData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+function loadFormData() {
+  const formData = JSON.parse(localStorage.getItem('formData')) || {};
+  nameInput.value = formData.name || '';
+  emailInput.value = formData.email || '';
+  messageInput.value = formData.message || '';
+}
+
+form.addEventListener('input', saveFormData);
+window.addEventListener('DOMContentLoaded', loadFormData);
